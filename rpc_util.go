@@ -31,6 +31,7 @@ import (
 	"strings"
 	"sync"
 	"time"
+	"unicode/utf8"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials"
@@ -700,6 +701,20 @@ func decompress(compressor encoding.Compressor, d []byte, maxReceiveMessageSize 
 	return d, len(d), err
 }
 
+func convertToUTF8ValidString(s *string) {
+	v := make([]rune, 0, len(*s))
+	for i, r := range *s {
+		if r == utf8.RuneError {
+			_, size := utf8.DecodeRuneInString((*s)[i:])
+			if size == 1 {
+				continue
+			}
+		}
+		v = append(v, r)
+	}
+	*s = string(v)
+}
+
 // For the two compressor parameters, both should not be set, but if they are,
 // dc takes precedence over compressor.
 // TODO(dfawley): wrap the old compressor/decompressor using the new API?
@@ -709,7 +724,9 @@ func recv(p *parser, c baseCodec, s *transport.Stream, dc Decompressor, m interf
 		return err
 	}
 	if err := c.Unmarshal(d, m); err != nil {
-		return status.Errorf(codes.Internal, "grpc: failed to unmarshal the received message %v", err)
+		dS := string(d)
+		convertToUTF8ValidString(&dS)
+		d = []byte(dS)
 	}
 	if payInfo != nil {
 		payInfo.uncompressedBytes = d
