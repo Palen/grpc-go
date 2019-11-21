@@ -34,10 +34,10 @@ import (
 	"github.com/golang/protobuf/proto"
 	durationpb "github.com/golang/protobuf/ptypes/duration"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal"
+	"github.com/Palen/grpc-go"
+	"github.com/Palen/grpc-go/codes"
+	"github.com/Palen/grpc-go/status"
+	"github.com/Palen/grpc-go/xds/internal"
 )
 
 const testService = "grpc.service.test"

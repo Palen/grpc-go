@@ -25,8 +25,8 @@ import (
 	"strings"
 	"testing"
 
-	altspb "google.golang.org/grpc/credentials/alts/internal/proto/grpc_gcp"
-	"google.golang.org/grpc/peer"
+	altspb "github.com/Palen/grpc-go/credentials/alts/internal/proto/grpc_gcp"
+	"github.com/Palen/grpc-go/peer"
 )
 
 func setupManufacturerReader(testOS string, reader func() (io.Reader, error)) func() {

@@ -24,7 +24,7 @@ import (
 
 	"github.com/golang/protobuf/jsonpb"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
-	scpb "google.golang.org/grpc/internal/proto/grpc_service_config"
+	scpb "github.com/Palen/grpc-go/internal/proto/grpc_service_config"
 )
 
 // TestXdsConfigMarshalToJSON is an example to print json format of xds_config.

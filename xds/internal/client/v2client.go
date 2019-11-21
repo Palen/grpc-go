@@ -24,9 +24,9 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/buffer"
+	"github.com/Palen/grpc-go"
+	"github.com/Palen/grpc-go/grpclog"
+	"github.com/Palen/grpc-go/internal/buffer"
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	adsgrpc "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v2"

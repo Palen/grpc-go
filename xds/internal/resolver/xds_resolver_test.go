@@ -26,11 +26,11 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
+	"github.com/Palen/grpc-go"
+	"github.com/Palen/grpc-go/resolver"
+	"github.com/Palen/grpc-go/serviceconfig"
+	xdsclient "github.com/Palen/grpc-go/xds/internal/client"
+	"github.com/Palen/grpc-go/xds/internal/client/bootstrap"
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 )

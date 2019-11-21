@@ -37,12 +37,12 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"golang.org/x/net/http2"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/stats"
-	"google.golang.org/grpc/status"
+	"github.com/Palen/grpc-go/codes"
+	"github.com/Palen/grpc-go/credentials"
+	"github.com/Palen/grpc-go/metadata"
+	"github.com/Palen/grpc-go/peer"
+	"github.com/Palen/grpc-go/stats"
+	"github.com/Palen/grpc-go/status"
 )
 
 // NewServerHandlerTransport returns a ServerTransport handling gRPC

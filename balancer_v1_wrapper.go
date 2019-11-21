@@ -22,10 +22,10 @@ import (
 	"context"
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/resolver"
+	"github.com/Palen/grpc-go/balancer"
+	"github.com/Palen/grpc-go/connectivity"
+	"github.com/Palen/grpc-go/grpclog"
+	"github.com/Palen/grpc-go/resolver"
 )
 
 type balancerWrapperBuilder struct {

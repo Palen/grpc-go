@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
+	"github.com/Palen/grpc-go/balancer"
+	"github.com/Palen/grpc-go/connectivity"
+	xdsclient "github.com/Palen/grpc-go/xds/internal/client"
 )
 
 // When a high priority is ready, adding/removing lower locality doesn't cause

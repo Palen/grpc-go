@@ -35,8 +35,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal"
+	"github.com/Palen/grpc-go/codes"
+	"github.com/Palen/grpc-go/internal"
 )
 
 func init() {

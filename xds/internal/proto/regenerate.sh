@@ -33,7 +33,7 @@ VALIDATE_VERSION=4f00761ef740eb579cfddcfee3951e13c4fae6f8
 mkdir validate
 curl https://raw.githubusercontent.com/envoyproxy/protoc-gen-validate/${VALIDATE_VERSION}/validate/validate.proto > validate/validate.proto
 
-find udpa -name "*.proto" | xargs -L 1 protoc --go_out=plugins=grpc,paths=source_relative,Mudpa/data/orca/v1/orca_load_report.proto=google.golang.org/grpc/xds/internal/proto/udpa/data/orca/v1:.
+find udpa -name "*.proto" | xargs -L 1 protoc --go_out=plugins=grpc,paths=source_relative,Mudpa/data/orca/v1/orca_load_report.proto=github.com/Palen/grpc-go/xds/internal/proto/udpa/data/orca/v1:.
 popd
 rm -rf ./udpa
 cp -r "$TMP"/udpa/udpa ./udpa

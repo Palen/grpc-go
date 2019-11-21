@@ -24,7 +24,7 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/xds/internal/client/fakexds"
+	"github.com/Palen/grpc-go/xds/internal/client/fakexds"
 
 	xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	basepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"

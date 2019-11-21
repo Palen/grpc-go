@@ -27,7 +27,7 @@ import (
 
 	xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	routepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/route"
-	"google.golang.org/grpc/xds/internal/client/fakexds"
+	"github.com/Palen/grpc-go/xds/internal/client/fakexds"
 )
 
 func (v2c *v2Client) cloneRDSCacheForTesting() map[string]string {

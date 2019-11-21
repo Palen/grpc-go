@@ -27,14 +27,14 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/xds/internal/balancer/edsbalancer"
-	"google.golang.org/grpc/xds/internal/balancer/lrs"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
+	"github.com/Palen/grpc-go/balancer"
+	"github.com/Palen/grpc-go/connectivity"
+	"github.com/Palen/grpc-go/grpclog"
+	"github.com/Palen/grpc-go/resolver"
+	"github.com/Palen/grpc-go/serviceconfig"
+	"github.com/Palen/grpc-go/xds/internal/balancer/edsbalancer"
+	"github.com/Palen/grpc-go/xds/internal/balancer/lrs"
+	xdsclient "github.com/Palen/grpc-go/xds/internal/client"
 )
 
 const (

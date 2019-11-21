@@ -26,7 +26,7 @@ package old
 import (
 	"fmt"
 
-	"google.golang.org/grpc/resolver"
+	"github.com/Palen/grpc-go/resolver"
 )
 
 const (

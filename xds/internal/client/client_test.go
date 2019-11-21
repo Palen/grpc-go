@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	"google.golang.org/grpc/xds/internal/client/fakexds"
+	"github.com/Palen/grpc-go"
+	"github.com/Palen/grpc-go/xds/internal/client/bootstrap"
+	"github.com/Palen/grpc-go/xds/internal/client/fakexds"
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 )

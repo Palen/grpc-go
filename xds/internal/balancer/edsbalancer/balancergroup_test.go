@@ -23,12 +23,12 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/xds/internal"
-	orcapb "google.golang.org/grpc/xds/internal/proto/udpa/data/orca/v1"
+	"github.com/Palen/grpc-go/balancer"
+	"github.com/Palen/grpc-go/balancer/roundrobin"
+	"github.com/Palen/grpc-go/connectivity"
+	"github.com/Palen/grpc-go/resolver"
+	"github.com/Palen/grpc-go/xds/internal"
+	orcapb "github.com/Palen/grpc-go/xds/internal/proto/udpa/data/orca/v1"
 )
 
 var (

@@ -26,10 +26,10 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
+	"github.com/Palen/grpc-go"
+	"github.com/Palen/grpc-go/grpclog"
+	"github.com/Palen/grpc-go/internal/backoff"
+	"github.com/Palen/grpc-go/xds/internal/client/bootstrap"
 )
 
 // For overriding in unittests.

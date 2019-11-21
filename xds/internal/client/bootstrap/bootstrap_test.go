@@ -23,8 +23,8 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/google"
+	"github.com/Palen/grpc-go"
+	"github.com/Palen/grpc-go/credentials/google"
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	structpb "github.com/golang/protobuf/ptypes/struct"

@@ -32,7 +32,7 @@ import (
 	cpb "google.golang.org/genproto/googleapis/rpc/code"
 	epb "google.golang.org/genproto/googleapis/rpc/errdetails"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
-	"google.golang.org/grpc/codes"
+	"github.com/Palen/grpc-go/codes"
 )
 
 // errEqual is essentially a copy of testutils.StatusErrEqual(), to avoid a

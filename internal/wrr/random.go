@@ -17,7 +17,7 @@
 
 package wrr
 
-import "google.golang.org/grpc/internal/grpcrand"
+import "github.com/Palen/grpc-go/internal/grpcrand"
 
 // weightedItem is a wrapped weighted item that is used to implement weighted random algorithm.
 type weightedItem struct {

@@ -30,10 +30,10 @@ import (
 	"github.com/golang/protobuf/proto"
 	durationpb "github.com/golang/protobuf/ptypes/duration"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/status"
+	"github.com/Palen/grpc-go/balancer"
+	"github.com/Palen/grpc-go/codes"
+	"github.com/Palen/grpc-go/resolver"
+	"github.com/Palen/grpc-go/status"
 )
 
 type lrsServer struct {

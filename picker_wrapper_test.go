@@ -25,10 +25,10 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	_ "google.golang.org/grpc/grpclog/glogger"
-	"google.golang.org/grpc/internal/transport"
+	"github.com/Palen/grpc-go/balancer"
+	"github.com/Palen/grpc-go/connectivity"
+	_ "github.com/Palen/grpc-go/grpclog/glogger"
+	"github.com/Palen/grpc-go/internal/transport"
 )
 
 const goroutineCount = 5

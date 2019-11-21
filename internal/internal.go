@@ -24,7 +24,7 @@ import (
 	"context"
 	"time"
 
-	"google.golang.org/grpc/connectivity"
+	"github.com/Palen/grpc-go/connectivity"
 )
 
 var (

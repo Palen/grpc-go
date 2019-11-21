@@ -25,11 +25,11 @@ import (
 	"context"
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/grpcrand"
-	"google.golang.org/grpc/resolver"
+	"github.com/Palen/grpc-go/balancer"
+	"github.com/Palen/grpc-go/balancer/base"
+	"github.com/Palen/grpc-go/grpclog"
+	"github.com/Palen/grpc-go/internal/grpcrand"
+	"github.com/Palen/grpc-go/resolver"
 )
 
 // Name is the name of round_robin balancer.

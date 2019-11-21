@@ -7,9 +7,9 @@ import (
 	context "context"
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "github.com/Palen/grpc-go"
+	codes "github.com/Palen/grpc-go/codes"
+	status "github.com/Palen/grpc-go/status"
 	math "math"
 )
 
@@ -579,7 +579,7 @@ const _ = grpc.SupportPackageIsVersion4
 
 // TestServiceClient is the client API for TestService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/Palen/grpc-go#ClientConn.NewStream.
 type TestServiceClient interface {
 	// One empty request followed by one empty response.
 	EmptyCall(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)

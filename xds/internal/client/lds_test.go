@@ -26,7 +26,7 @@ import (
 	"time"
 
 	xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
-	"google.golang.org/grpc/xds/internal/client/fakexds"
+	"github.com/Palen/grpc-go/xds/internal/client/fakexds"
 )
 
 func TestGetRouteConfigNameFromListener(t *testing.T) {

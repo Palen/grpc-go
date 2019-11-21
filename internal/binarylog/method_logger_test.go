@@ -27,9 +27,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/ptypes/duration"
-	pb "google.golang.org/grpc/binarylog/grpc_binarylog_v1"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
+	pb "github.com/Palen/grpc-go/binarylog/grpc_binarylog_v1"
+	"github.com/Palen/grpc-go/codes"
+	"github.com/Palen/grpc-go/status"
 )
 
 func TestLog(t *testing.T) {

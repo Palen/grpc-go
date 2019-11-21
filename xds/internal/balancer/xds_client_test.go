@@ -36,12 +36,12 @@ import (
 	structpb "github.com/golang/protobuf/ptypes/struct"
 	wrpb "github.com/golang/protobuf/ptypes/wrappers"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/status"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
+	"github.com/Palen/grpc-go"
+	"github.com/Palen/grpc-go/balancer"
+	"github.com/Palen/grpc-go/codes"
+	"github.com/Palen/grpc-go/resolver"
+	"github.com/Palen/grpc-go/status"
+	xdsclient "github.com/Palen/grpc-go/xds/internal/client"
 )
 
 var (

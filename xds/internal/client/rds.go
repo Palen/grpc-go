@@ -23,7 +23,7 @@ import (
 	"net"
 
 	"github.com/golang/protobuf/ptypes"
-	"google.golang.org/grpc/grpclog"
+	"github.com/Palen/grpc-go/grpclog"
 
 	xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 )

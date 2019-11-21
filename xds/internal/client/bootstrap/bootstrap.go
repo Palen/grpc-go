@@ -28,9 +28,9 @@ import (
 	"os"
 
 	"github.com/golang/protobuf/jsonpb"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/google"
-	"google.golang.org/grpc/grpclog"
+	"github.com/Palen/grpc-go"
+	"github.com/Palen/grpc-go/credentials/google"
+	"github.com/Palen/grpc-go/grpclog"
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 )

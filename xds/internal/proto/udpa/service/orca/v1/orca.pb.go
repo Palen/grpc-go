@@ -9,10 +9,10 @@ import (
 	_ "github.com/envoyproxy/protoc-gen-validate/validate"
 	proto "github.com/golang/protobuf/proto"
 	duration "github.com/golang/protobuf/ptypes/duration"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
-	v1 "google.golang.org/grpc/xds/internal/proto/udpa/data/orca/v1"
+	grpc "github.com/Palen/grpc-go"
+	codes "github.com/Palen/grpc-go/codes"
+	status "github.com/Palen/grpc-go/status"
+	v1 "github.com/Palen/grpc-go/xds/internal/proto/udpa/data/orca/v1"
 	math "math"
 )
 
@@ -117,7 +117,7 @@ const _ = grpc.SupportPackageIsVersion4
 
 // OpenRcaServiceClient is the client API for OpenRcaService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/Palen/grpc-go#ClientConn.NewStream.
 type OpenRcaServiceClient interface {
 	StreamCoreMetrics(ctx context.Context, in *OrcaLoadReportRequest, opts ...grpc.CallOption) (OpenRcaService_StreamCoreMetricsClient, error)
 }

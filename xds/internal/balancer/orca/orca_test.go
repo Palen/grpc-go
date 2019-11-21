@@ -22,8 +22,8 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/metadata"
-	orcapb "google.golang.org/grpc/xds/internal/proto/udpa/data/orca/v1"
+	"github.com/Palen/grpc-go/metadata"
+	orcapb "github.com/Palen/grpc-go/xds/internal/proto/udpa/data/orca/v1"
 )
 
 var (

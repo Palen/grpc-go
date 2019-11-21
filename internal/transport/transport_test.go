@@ -36,10 +36,10 @@ import (
 
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/leakcheck"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/status"
+	"github.com/Palen/grpc-go/codes"
+	"github.com/Palen/grpc-go/internal/leakcheck"
+	"github.com/Palen/grpc-go/internal/testutils"
+	"github.com/Palen/grpc-go/status"
 )
 
 type server struct {

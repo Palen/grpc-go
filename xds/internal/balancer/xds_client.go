@@ -27,14 +27,14 @@ import (
 	xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	xdsgrpc "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v2"
 	"github.com/golang/protobuf/ptypes"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/xds/internal/balancer/lrs"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
+	"github.com/Palen/grpc-go"
+	"github.com/Palen/grpc-go/balancer"
+	"github.com/Palen/grpc-go/grpclog"
+	"github.com/Palen/grpc-go/internal/backoff"
+	"github.com/Palen/grpc-go/internal/channelz"
+	"github.com/Palen/grpc-go/xds/internal/balancer/lrs"
+	xdsclient "github.com/Palen/grpc-go/xds/internal/client"
+	"github.com/Palen/grpc-go/xds/internal/client/bootstrap"
 )
 
 const (

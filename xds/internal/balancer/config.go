@@ -21,8 +21,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/Palen/grpc-go/balancer"
+	"github.com/Palen/grpc-go/serviceconfig"
 )
 
 // XDSConfig represents the loadBalancingConfig section of the service config

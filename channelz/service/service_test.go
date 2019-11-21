@@ -29,10 +29,10 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/channelz"
+	channelzpb "github.com/Palen/grpc-go/channelz/grpc_channelz_v1"
+	"github.com/Palen/grpc-go/connectivity"
+	"github.com/Palen/grpc-go/credentials"
+	"github.com/Palen/grpc-go/internal/channelz"
 )
 
 func init() {

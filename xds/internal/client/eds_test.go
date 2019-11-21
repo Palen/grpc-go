@@ -28,8 +28,8 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	anypb "github.com/golang/protobuf/ptypes/any"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/client/fakexds"
+	"github.com/Palen/grpc-go/xds/internal"
+	"github.com/Palen/grpc-go/xds/internal/client/fakexds"
 )
 
 func TestParseEDSRespProto(t *testing.T) {

@@ -22,7 +22,7 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/ptypes"
-	"google.golang.org/grpc/grpclog"
+	"github.com/Palen/grpc-go/grpclog"
 
 	xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	httppb "github.com/envoyproxy/go-control-plane/envoy/config/filter/network/http_connection_manager/v2"

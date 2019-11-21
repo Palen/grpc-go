@@ -23,8 +23,8 @@ import (
 
 	anypb "github.com/golang/protobuf/ptypes/any"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
+	"github.com/Palen/grpc-go/codes"
+	"github.com/Palen/grpc-go/status"
 )
 
 var statusErr = status.ErrorProto(&spb.Status{

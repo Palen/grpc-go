@@ -27,11 +27,11 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/status"
+	"github.com/Palen/grpc-go/codes"
+	"github.com/Palen/grpc-go/resolver"
+	"github.com/Palen/grpc-go/resolver/manual"
+	"github.com/Palen/grpc-go/serviceconfig"
+	"github.com/Palen/grpc-go/status"
 )
 
 func (s) TestParseTarget(t *testing.T) {

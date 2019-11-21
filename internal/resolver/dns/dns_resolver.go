@@ -32,11 +32,11 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/backoff"
-	"google.golang.org/grpc/grpclog"
-	internalbackoff "google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/grpcrand"
-	"google.golang.org/grpc/resolver"
+	"github.com/Palen/grpc-go/backoff"
+	"github.com/Palen/grpc-go/grpclog"
+	internalbackoff "github.com/Palen/grpc-go/internal/backoff"
+	"github.com/Palen/grpc-go/internal/grpcrand"
+	"github.com/Palen/grpc-go/resolver"
 )
 
 // EnableSRVLookups controls whether the DNS resolver attempts to fetch gRPCLB

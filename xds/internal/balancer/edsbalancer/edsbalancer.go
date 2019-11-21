@@ -24,17 +24,17 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/balancer/weightedroundrobin"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/balancer/lrs"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
+	"github.com/Palen/grpc-go/balancer"
+	"github.com/Palen/grpc-go/balancer/roundrobin"
+	"github.com/Palen/grpc-go/balancer/weightedroundrobin"
+	"github.com/Palen/grpc-go/codes"
+	"github.com/Palen/grpc-go/connectivity"
+	"github.com/Palen/grpc-go/grpclog"
+	"github.com/Palen/grpc-go/resolver"
+	"github.com/Palen/grpc-go/status"
+	"github.com/Palen/grpc-go/xds/internal"
+	"github.com/Palen/grpc-go/xds/internal/balancer/lrs"
+	xdsclient "github.com/Palen/grpc-go/xds/internal/client"
 )
 
 // TODO: make this a environment variable?

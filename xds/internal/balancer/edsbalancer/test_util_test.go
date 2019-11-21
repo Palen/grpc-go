@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"testing"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/xds/internal"
+	"github.com/Palen/grpc-go"
+	"github.com/Palen/grpc-go/balancer"
+	"github.com/Palen/grpc-go/connectivity"
+	"github.com/Palen/grpc-go/resolver"
+	"github.com/Palen/grpc-go/xds/internal"
 )
 
 const testSubConnsCount = 16

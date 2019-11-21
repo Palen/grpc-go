@@ -28,15 +28,15 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/benchmark"
-	testpb "google.golang.org/grpc/benchmark/grpc_testing"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/syscall"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/testdata"
+	"github.com/Palen/grpc-go"
+	"github.com/Palen/grpc-go/benchmark"
+	testpb "github.com/Palen/grpc-go/benchmark/grpc_testing"
+	"github.com/Palen/grpc-go/codes"
+	"github.com/Palen/grpc-go/credentials"
+	"github.com/Palen/grpc-go/grpclog"
+	"github.com/Palen/grpc-go/internal/syscall"
+	"github.com/Palen/grpc-go/status"
+	"github.com/Palen/grpc-go/testdata"
 )
 
 var (

@@ -24,10 +24,10 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	"github.com/Palen/grpc-go"
+	"github.com/Palen/grpc-go/codes"
+	"github.com/Palen/grpc-go/status"
+	testpb "github.com/Palen/grpc-go/test/grpc_testing"
 )
 
 func (s) TestStreamCleanup(t *testing.T) {

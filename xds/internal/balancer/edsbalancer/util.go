@@ -16,7 +16,7 @@
 
 package edsbalancer
 
-import "google.golang.org/grpc/internal/wrr"
+import "github.com/Palen/grpc-go/internal/wrr"
 
 type dropper struct {
 	// Drop rate will be numerator/denominator.
